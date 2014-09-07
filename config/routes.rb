@@ -3,6 +3,10 @@ Jv::Application.routes.draw do
 
     root :to => 'pages#home'
   get 'home' => 'pages#home'
+  get 'current' => 'pages#current'
+  get 'past' => 'pages#past'
+  get 'writing' => 'pages#writing'
+  get 'contact' => 'pages#contact'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

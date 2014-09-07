@@ -1,0 +1,64 @@
+<style>@-webkit-keyframes typing {
+    from { width: 0 }
+    to { width:174px }
+}
+
+@-moz-keyframes typing {
+    from { width: 0 }
+    to { width:174px }
+}
+
+@-webkit-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@-moz-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+body { font-family: Ropa Sans, monospace; }
+
+h1 { 
+    font-size:150%;
+    width:174px;
+    white-space:nowrap;
+    overflow:hidden;
+    border-right: .1em solid black;
+    margin: 20px auto 0px auto;
+
+    
+    -webkit-animation: typing 2s steps(30, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+    -moz-animation: typing 2s steps(30, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+}
+</style>
+<h2> <a href="/home"><-- Back</a></h2>
+<%= render 'menu' %>
+<h1>sometimes I write...</h1>
+<br>
+<br>
+<br>
+<table id="writing-table">
+<tr>
+<td>
+<img src="https://s3-us-west-1.amazonaws.com/mobilecleanse/look_up.gif">
+</td>
+<td>
+<h3>This is Your Brain on Mobile -- <a href="http://www.huffingtonpost.com/jeremy-vandehey/this-is-your-brain-on-mobile_b_5374935.html" target="_blank">huffington post</a> | <a href="https://medium.com/@jgvandehey/this-is-your-brain-on-mobile-15308056cfae" target="_blank">medium</a></h3>
+<h4>Destructive smartphone habits diagnosed by someone who makes apps.</h4>
+</td>
+</tr>
+<br>
+<tr>
+<td>
+<img src="https://d262ilb51hltx0.cloudfront.net/max/1600/1*reunOVac5lKerQ79mAjd1A.gif">
+</td>
+<td>
+<h3>Putting the W back in WFH -- <a href="http://www.huffingtonpost.com/jeremy-vandehey/working-from-home_b_5696034.html" target="_blank">huffington post</a> | <a href="https://medium.com/@jgvandehey/how-to-work-from-home-3ed0d9b693a5" target="_blank">medium</a> | <a href="https://www.linkedin.com/pulse/article/20140821155920-45821928-putting-the-w-back-in-wfh" target="_blank">linkedin</a></h3>
+<h4>How to not be a piece of shit while working from home.</h4>
+</td>
+</tr>
+</table>

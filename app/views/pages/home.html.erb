@@ -1,1 +1,44 @@
-Hi
+<style>@-webkit-keyframes typing {
+    from { width: 0 }
+    to { width:660px }
+}
+
+@-moz-keyframes typing {
+    from { width: 0 }
+    to { width:660px }
+}
+
+@-webkit-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@-moz-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+body { font-family: Ropa Sans, monospace; }
+
+h1 { 
+    font-size:150%;
+    width:660px;
+    white-space:nowrap;
+    overflow:hidden;
+    border-right: .1em solid black;
+    margin: 0px auto;
+
+    
+    -webkit-animation: typing 3s steps(30, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+    -moz-animation: typing 3s steps(30, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+}
+</style>
+<div id="content">
+<img src="http://www.huffingtonpost.com/contributors/jeremy-vandehey/headshot.jpg">
+<h1>Hi, my name is Jeremy. Thanks for stopping by and checking out my work.</h1>
+<%= render 'menu' %>
+<!-- <h5><strong><i><pre>like -- </i></strong> beer, technology, the badgers, woodworking, coffee, the packers, and good design</h5> -->
+<h5><strong><i>like -- </i></strong>beer, technology, the badgers, travel, music, woodworking, coffee, the packers, whiskey, and good design</h5>
+<h5 style="margin-top: -30px" class="red-box"><strong><i>dislike -- </i></strong>complacency, racism, decaf, bugs with no good/easy stack overflow answers</h5>
