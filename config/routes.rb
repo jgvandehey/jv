@@ -6,6 +6,7 @@ Jv::Application.routes.draw do
   get 'current' => 'pages#current'
   get 'past' => 'pages#past'
   get 'writing' => 'pages#writing'
+  get 'homemades' => 'pages#homemades'
   get 'contact' => 'pages#contact'
 
   # The priority is based upon order of creation:
